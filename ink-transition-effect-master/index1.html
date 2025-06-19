@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|IM+Fell+Double+Pica:400italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>About The Founder | Simply Hindi</title>
+</head>
+<body>
+<main class="cd-main-content">
+	<div class="center">
+		<h1></h1>
+		<a href="#0" class="cd-btn cd-modal-trigger"></a>
+	</div>
+</main>
+
+<!-- Modal Content -->
+<div class="cd-modal">
+	<div class="modal-content">
+		<p>
+			Vedika’s journey as a Hindi language educator began with a simple observation—many people were eager to learn Hindi, a beautiful and logical language. Driven by this passion, she launched Let’s Speak Hindi on Instagram in September 2020, sharing easy-to-follow lessons that quickly gained popularity.
+			Over five years, Vedika has helped over 300 professionals from diverse backgrounds master spoken Hindi. Her approach is simple—teaching Hindi like a child learns a language, using relatable examples and connections to other languages. One of her most memorable success stories is of Bhargavi, a student who could only attend a few classes due to work commitments. Yet, with just the basics she learned, Bhargavi managed to communicate effectively with her patients in Hindi. Years later, she sent Vedika a heartfelt message:
+			"I was able to manage my three years in Delhi with the help of the few classes I attended. Happy Teacher’s Day, ma’am!"
+		</p>
+
+		<p>
+			Simply Hindi is the evolution of that journey—a brand born from Let’s Speak Hindi, now with a renewed mission to make Hindi the most spoken language globally. It stands for bridging cultures, connecting people, and making Hindi learning simple and impactful.
+			For Vedika, Hindi is more than just words—it’s a cultural treasure, a bridge to understanding, and a language that deserves its place on the global stage. Simply Hindi is her way of bringing that dream to life.
+		</p>
+	</div>
+	<a href="#" class="modal-close">Close</a>
+</div>
+
+<!-- Auto-open the modal on load -->
+<script>
+  window.addEventListener('load', function() {
+    document.querySelector('.cd-btn.cd-modal-trigger').click();
+  });
+</script>
+
+<!-- Close button redirects to index.html -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = document.querySelector(".modal-close");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "../SimplyHindi/about.html"; // ✅ Redirect on close
+      });
+    }
+  });
+</script>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- You can keep or remove unused logic if needed -->
+</body>
+</html>
