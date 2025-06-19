@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simply Hindi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- GSAP ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Favicon -->
+    <link href="img/logoo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top" style="background-color: #b743cb;">
+    <div class="container">
+        <nav class="navbar navbar-dark py-2" style="background-color: #b743cb;">
+            <a href="index.html" class="navbar-brand">
+                <img class="img-fluid" src="img/logoo.png" alt="Logo">
+            </a>
+
+            <!-- Hamburger toggle button -->
+            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible menu that aligns right -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav text-end">
+                    <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+                    <a href="about.html" class="nav-item nav-link text-white">About</a>
+                    <a href="course.html" class="nav-item nav-link text-white">Courses</a>
+                    <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
+                    <a href="Services.html" class="nav-item nav-link active text-white">Services</a>
+                    <a href="testimonial.html" class="nav-item nav-link active text-white">Testimonial</a>
+                    <a href="Vlog.html" class="nav-item nav-link active text-white">Vlog</a>
+                     <a href="Terms&Conditions.html" class="nav-item nav-link active text-white">Terms & Conditions</a>
+                    <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #f068de !important;">
+    <div class="container text-center py-5">
+        <h1 class="display-2 text-dark mb-4 animated slideInDown" style="font-family: 'Playfair Display', serif;">
+           Testimonial
+        </h1>
+        <nav aria-label="breadcrumb" class="animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0" style="font-family: 'Playfair Display', serif;">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item text-dark" aria-current="page">Testimonial</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<style>
+    .page-header {
+        background-color: #f068de !important;
+        background-image: none !important; /* in case there's a background image */
+    }
+</style>
+<!-- Page Header End -->
+
+<!-- Vlog Section - Auto Sliding Reels (PC Only) -->
+<section class="vlog-section">
+  <div class="vlog-container">
+    <h2 class="vlog-title" style="font-family: 'Playfair Display', serif;">
+  Hear It from Our Learners
+</h2>
+
+
+    <div class="reel-slider" id="reelSlider">
+      <!-- Reel Videos -->
+      <div class="reel-box"><video src="images/2c9480a7-6021-403e-aadb-0e1cee6d0b9e.mp4" muted autoplay loop playsinline></video></div>
+      <div class="reel-box"><video src="images/fb2e2761-3995-4210-b4d8-ba29a6c69ae8.mp4" muted autoplay loop playsinline></video></div>
+      <div class="reel-box"><video src="images/906e3b1d-b4f3-4ef7-8571-bdd0cb686ca9.mp4" muted autoplay loop playsinline></video></div>
+      <div class="reel-box"><video src="images/WhatsApp Video 2025-06-17 at 3.34.18 PM (1).mp4" muted autoplay loop playsinline></video></div>
+      <div class="reel-box"><video src="images/WhatsApp Video 2025-06-17 at 3.32.57 PM.mp4" muted autoplay loop playsinline></video></div>
+      <div class="reel-box"><video src="images/WhatsApp Video 2025-06-17 at 3.32.52 PM.mp4" muted autoplay loop playsinline></video></div>
+      <div class="reel-box"><video src="images/WhatsApp Video 2025-06-17 at 3.32.59 PM.mp4" muted autoplay loop playsinline></video></div>
+      <div class="reel-box"><video src="images/WhatsApp Video 2025-06-17 at 3.33.01 PM.mp4" muted autoplay loop playsinline></video></div>
+      <div class="reel-box"><video src="images/WhatsApp Video 2025-06-17 at 3.34.18 PM.mp4" muted autoplay loop playsinline></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- Auto Slide Script (Desktop Only) -->
+<script>
+  const slider = document.getElementById('reelSlider');
+  let scrollAmount = 0;
+  const scrollStep = 280;
+  const scrollInterval = 3000;
+
+  function autoSlideReels() {
+    if (window.innerWidth >= 768) {
+      if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+        scrollAmount = 0;
+      } else {
+        scrollAmount += scrollStep;
+      }
+      slider.scrollTo({
+        left: scrollAmount,
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  setInterval(autoSlideReels, scrollInterval);
+
+  // Toggle mute on click
+  document.querySelectorAll('.reel-box video').forEach(video => {
+    video.addEventListener('click', () => {
+      video.muted = !video.muted;
+    });
+  });
+</script>
+
+<!-- Styles -->
+<style>
+.vlog-section {
+  background: #a30cb0;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.vlog-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff8e1;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px #fdd835;
+}
+
+/* Base horizontal scroll */
+.reel-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.reel-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.reel-box {
+  flex: 0 0 auto;
+  width: 260px;
+  height: 460px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.reel-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reel-box:hover {
+  transform: scale(1.02);
+}
+
+/* On large screens: no manual scrollbars, let it auto-slide */
+@media (min-width: 768px) {
+  .reel-slider {
+    overflow-x: hidden; /* prevent scrollbar showing on desktop */
+  }
+}
+</style>
+    <!-- Testimonial Start -->
+
+
+  <div class="container py-5">
+    <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+ <p class="fs-5 fw-medium fst-italic" style="font-family: 'Playfair Display', serif; color: purple;">
+  Testimonial
+</p>
+
+<h1 class="display-6" style="font-family: 'Playfair Display', serif;color: #dc1c7c;">
+  What our clients say about Simply Hindi
+</h1>
+
+    </div>
+
+    <!-- 🌟 Testimonial Cards Start -->
+    <div class="grid mt-5">
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>Took a 20-day spoken Hindi course with Vedika—fun, practical, and super effective! I now speak with more confidence, understand grammar better, and even enjoy Hindi films more!</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/21.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Ananya Santosh
+<br></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>A beautiful learning experience! From enrolling to the final day, everything felt smooth and encouraging. Great trainer, punctual, and very interactive.</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/22.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Raaghav P M<br></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>This course opened a new dimension in my life. Learning Hindi with my daughter bonded us in new ways. Feeling proud and motivated to learn even more!</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/23.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Arul Subramaniam
+<br></h2>
+          </div>
+        </div>
+      </div>
+
+       
+
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>Loved the way Vedika made Hindi so relatable! Simple, casual conversations helped us speak from day one. Great for everyday use and confidence building.</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/24.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Kaspar Johannes Meyer <br></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>Never thought I’d enjoy grammar, but this class made it easy and fun. Vedika’s friendly style and clarity helped me speak better Hindi in just weeks!</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/25.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2> Dr Gowri Meena<br></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 🌟 Testimonial Cards End -->
+
+  </div>
+</div>
+
+<!-- 🌟 Custom Style -->
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.testimonial {
+  background-color: #800080 !important;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* Mobile: stack cards vertically */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mycard {
+    width: 90%;
+  }
+}
+
+.mycard {
+  flex: 0 0 30%;
+  min-width: 280px;
+  max-width: 350px;
+  position: relative;
+  padding: 40px 20px;
+  background: #ff0;
+  border-radius: 10px;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  animation: animate 5s linear infinite;
+  overflow: hidden;
+}
+
+.mycard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  transform: skewx(-5deg);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mycard:nth-child(1) {
+  background: #3fc012 url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+.mycard:nth-child(2) {
+  background: #f1206a url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+.mycard:nth-child(3) {
+  background: #0f84d4 url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+.mycard:nth-child(4) {
+  background: #d40f0f url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+.mycard:nth-child(5) {
+  background: #d46e0f url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+@keyframes animate {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 -196px; }
+}
+
+.mycard .image {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.mycard .image img {
+  width: 100%;
+  height: auto;
+}
+
+.mycard .text {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.mycard .text::before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mycard .details {
+  text-align: center;
+  color: #fff;
+}
+
+.mycard .details h2 {
+  font-size: 20px;
+  margin: 0;
+}
+</style>
+
+
+
+    <!-- Testimonial End -->
+
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4" style="background-color: #b743cb; color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="fw-medium text-white" href="#">Simply Hindi</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                Designed By <a class="fw-medium text-white" href="https://www.linkedin.com/in/nitish-kumar-516aba28b/">Nitish Kumar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top" style="background-color: purple; border-color: purple;">
+  <i class="bi bi-arrow-up" style="color: white;"></i>
+</a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

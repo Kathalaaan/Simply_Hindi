@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simply Hindi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- GSAP ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Favicon -->
+    <link href="img/logoo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top" style="background-color: #b743cb;">
+    <div class="container">
+        <nav class="navbar navbar-dark py-2" style="background-color: #b743cb;">
+            <a href="index.html" class="navbar-brand">
+                <img class="img-fluid" src="img/logoo.png" alt="Logo">
+            </a>
+
+            <!-- Hamburger toggle button -->
+            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible menu that aligns right -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav text-end">
+                    <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+                    <a href="about.html" class="nav-item nav-link text-white">About</a>
+                    <a href="course.html" class="nav-item nav-link text-white">Courses</a>
+                    <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
+                    <a href="Services.html" class="nav-item nav-link active text-white">Services</a>
+                    <a href="testimonial.html" class="nav-item nav-link active text-white">Testimonial</a>
+                    <a href="Vlog.html" class="nav-item nav-link active text-white">Vlog</a>
+                     <a href="Terms&Conditions.html" class="nav-item nav-link active text-white">Terms & Conditions</a>
+                    <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #f068de !important;">
+    <div class="container text-center py-5">
+        <h1 class="display-2 text-dark mb-4 animated slideInDown" style="font-family: 'Playfair Display', serif;">
+            About Us
+        </h1>
+        <nav aria-label="breadcrumb" class="animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0" style="font-family: 'Playfair Display', serif;">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item text-dark" aria-current="page">About</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<style>
+    .page-header {
+        background-color: #f068de !important;
+        background-image: none !important; /* in case there's a background image */
+    }
+</style>
+<!-- Page Header End -->
+
+
+<!-- ✅ Self-contained, responsive, full-height section for integration -->
+<div class="nftdax-section">
+  <div class="nftdax-container">
+
+    <!-- Text block: Heading + Name -->
+    <div class="nftdax-side-one">
+      <h1 class="founder-heading" style="font-family: 'Playfair Display', serif;">About The Founder</h1>
+<h2 class="founder-name" style="font-family: 'Playfair Display', serif;">Vedika</h2>
+
+    </div>
+
+    <!-- Image and rotating text -->
+    <div class="nftdax-side-two">
+      <div class="nftdax-circle">
+        <img src="img/Book Now (500 x 500 px) (1).png" alt="Vedika">
+      </div>
+      <div class="nftdax-circle-text-outside">
+        <div class="nftdax-dot"></div>
+        <svg viewBox="0 0 200 200" class="circle-svg">
+          <defs>
+            <path id="circlePathOutside" d="M100,100 m-90,0 a90,90 0 1,1 180,0 a90,90 0 1,1 -180,0" />
+          </defs>
+          <text text-anchor="middle">
+            <textPath xlink:href="#circlePathOutside" startOffset="50%">
+             Say It Simply. Say It in Hindi. 
+            </textPath>
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 🔽 Buttons come last on mobile -->
+   <div class="nftdax-buttons">
+  <button class="nftdax-btn nftdax-skew" onclick="location.href='../ink-transition-effect-master/index1.html'">READ MORE</button>
+</div>
+
+
+  </div>
+</div>
+
+
+<style>
+@font-face {
+  font-family: 'z';
+  src: url('font/Zolina-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'l';
+  src: url('font/LP Horizont Caps.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@600&display=swap');
+
+.nftdax-section * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
+.nftdax-section {
+  background: #a30cb0;
+  width: 100%;
+
+
+  min-height: 90vh; /* Use min-height for responsiveness */
+  padding: 5rem 2rem; /* Reduced bottom padding */
+  position: relative;
+  overflow: visible;;
+}
+
+.nftdax-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.nftdax-side-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ⬅ center items horizontally */
+  justify-content: center;
+}
+
+
+
+.nftdax-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem; /* reduced padding */
+  font-size: 0.85rem;   /* smaller font */
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  font-family: 'l';
+  letter-spacing: 0.5px;
+}
+
+
+.founder-heading {
+  font-size: 4.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+
+
+.founder-name {
+  font-size: 6.5rem;
+  font-family: 'z';
+  color: #ff1c87;
+  margin-bottom: 0.4rem;
+}
+
+
+
+.nftdax-skew::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(45deg, #ee128f, #f3111c);
+  transform: skew(-20deg);
+  z-index: -1;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+.nftdax-btn:hover::before {
+  transform: skew(0);
+}
+
+.nftdax-side-two {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.nftdax-circle {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #f3111c, #ee128f);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 30px #1a1a1a;
+  position: relative;
+  z-index: 2;
+}
+
+.nftdax-circle img {
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  z-index: 3;
+}
+
+.nftdax-circle-text-outside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 660px;
+  height: 660px;
+  animation: rotateText 12s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.circle-svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+  font-size: 5.5px; /* increase for visibility */
+  font-family: 'l';
+  letter-spacing: 1.5px;
+  overflow: visible;
+}
+
+
+.nftdax-dot {
+  background: white;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotateText {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* 📱 Mobile Responsiveness Fix */
+@media (max-width: 768px) {
+  .nftdax-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .nftdax-container {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nftdax-side-one,
+  .nftdax-side-two {
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+
+  .nftdax-side-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-heading {
+    font-size: 2.8rem;
+    order: 1;
+  }
+
+  .founder-name {
+    font-size: 3.2rem;
+    order: 2;
+  }
+
+  .nftdax-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    order: 3;
+  }
+
+  .nftdax-side-two {
+    order: 2;
+  }
+
+  .nftdax-circle {
+    width: 280px;
+    height: 280px;
+    box-shadow: 0 0 0 20px #1a1a1a;
+    margin: 0 auto;
+  }
+
+  .nftdax-circle-text-outside {
+    width: 360px;
+    height: 360px;
+  }
+
+  .circle-svg {
+    font-size: 4px;
+  }
+}
+
+
+</style>
+     <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+           <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/2.png" alt="">
+                            <img class="img-fluid bg-white w-50 wow fadeIn" data-wow-delay="0.2s" src="img/1.png" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/3.png" alt="">
+                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="section-title">
+                       <p class="fs-5 fw-medium fst-italic" style="font-family: 'Playfair Display', serif; color: purple;">About Us</p>
+<h1 class="display-6" style="font-family: 'Playfair Display', serif;color: #dc1c7c;">The success story of Simply Hindi</h1>
+
+                    </div>
+                   
+                    
+                    <div class="row g-3">
+                        <div class="col-sm-8">
+                            <h5 style="font-family: 'Playfair Display', serif;color: #e87cb2;">Welcome to Simply Hindi!</h5>
+
+                            <p class="mb-0">At Simply Hindi, we make learning Hindi simple, enjoyable, and unforgettable. Whether you're starting from scratch or brushing up your skills, our personalized courses are designed for learners of all backgrounds—professionals, travelers, and culture enthusiasts alike.
+
+Led by expert trainers, our sessions blend practical language skills with rich cultural insights, so you don’t just learn Hindi—you live it. From one-on-one lessons to corporate training, we tailor every experience to your needs.
+
+Because at Simply Hindi, we believe language isn’t just about words—it’s about connection, culture, and confidence.
+
+Say it simply. Say it in Hindi.</p>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+.section-title::before {
+    background-color: purple !important;
+}
+</style>
+
+    <!-- About End -->
+
+   
+
+
+     <!-- Copyright Start -->
+<div class="container-fluid copyright py-4" style="background-color: #b743cb; color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="fw-medium text-white" href="#">Simply Hindi</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                Designed By <a class="fw-medium text-white" href="https://www.linkedin.com/in/nitish-kumar-516aba28b/">Nitish Kumar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top" style="background-color: purple; border-color: purple;">
+  <i class="bi bi-arrow-up" style="color: white;"></i>
+</a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

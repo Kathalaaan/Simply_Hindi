@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simply Hindi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- GSAP ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Favicon -->
+    <link href="img/logoo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid sticky-top" style="background-color: #b743cb;">
+    <div class="container">
+        <nav class="navbar navbar-dark py-2" style="background-color: #b743cb;">
+            <a href="index.html" class="navbar-brand">
+                <img class="img-fluid" src="img/logoo.png" alt="Logo">
+            </a>
+
+            <!-- Hamburger toggle button -->
+            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible menu that aligns right -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav text-end">
+                    <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+                    <a href="about.html" class="nav-item nav-link text-white">About</a>
+                    <a href="course.html" class="nav-item nav-link text-white">Courses</a>
+                    <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
+                    <a href="Services.html" class="nav-item nav-link active text-white">Services</a>
+                    <a href="testimonial.html" class="nav-item nav-link active text-white">Testimonial</a>
+                    <a href="Vlog.html" class="nav-item nav-link active text-white">Vlog</a>
+                     <a href="Terms&Conditions.html" class="nav-item nav-link active text-white">Terms & Conditions</a>
+                    <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+
+
+<!-- Carousel Start -->
+<div class="container-fluid px-0 mb-5">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- all carousel content here -->
+         <!-- Banner Start -->
+<div class="banner">
+  <div class="content">
+    <div class="title"></div>
+    
+    
+  </div>
+</div>
+<!-- Banner End -->
+
+    </div>
+</div>
+
+<style>
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('img/Say\ It\ Simply.\ Say\ It\ in\ Hindi.\ \(2\).png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+  
+}
+
+.banner .content {
+  z-index: 1;
+  padding: 20px;
+}
+
+.banner .title {
+  font-size: 9vw;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 130px
+}
+
+.banner p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+ 
+  margin-bottom: 30px
+}
+
+.banner .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.banner .btn:hover {
+  background-color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner .title {
+    font-size: 12vw;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+  }
+
+  .banner .btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner .title {
+    font-size: 14vw;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+}
+</style>
+<!-- Carousel End -->
+
+
+
+
+<!--  First marquee -->
+<div class="marquee">
+  <div class="marquee__group">
+    <span>Contact ➺</span>
+    <span>98408 33186
+</span>
+    <span>Contact ➺
+</span>
+  </div>
+  <div class="marquee__group" aria-hidden="true">
+    <span>98408 33186</span>
+    <span>Contact ➺</span>
+    <span>98408 33186</span>
+  </div>
+</div>
+
+<style>
+.marquee {
+  display: flex;
+  overflow: hidden;
+  height: 12vh;
+  user-select: none;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  background-color: purple !important; /* 🔐 Force it */
+}
+
+
+
+
+
+.marquee:hover {
+  -webkit-text-stroke: 1.5px #fff;
+  text-stroke: 1.5px #fff;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+  transition: all 0.5s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-width: 100%;
+  animation: scroll 15s linear infinite reverse;
+}
+
+.marquee__group span {
+  color: white;
+  font-size: 5vw;
+  font-weight: 800;
+  white-space: nowrap;
+  font-family: 'Syne', sans-serif !important;
+  line-height: 1.1; /* Helps avoid clipping */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 2rem));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .marquee__group span {
+    font-size: 6vw; /* Slightly smaller for mobile */
+  }
+}
+</style>
+
+
+
+
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+           <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/2.png" alt="">
+                            <img class="img-fluid bg-white w-50 wow fadeIn" data-wow-delay="0.2s" src="img/1.png" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/3.png" alt="">
+                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="section-title">
+                       <p class="fs-5 fw-medium fst-italic" style="font-family: 'Playfair Display', serif; color: purple;">About Us</p>
+<h1 class="display-6" style="font-family: 'Playfair Display', serif;color: #dc1c7c;">The success story of Simply Hindi</h1>
+
+                    </div>
+                   
+                    
+                    <div class="row g-3">
+                        <div class="col-sm-8">
+                            <h5 style="font-family: 'Playfair Display', serif;color: #e87cb2;">Welcome to Simply Hindi!</h5>
+
+                            <p class="mb-0">At Simply Hindi, we make learning Hindi simple, enjoyable, and unforgettable. Whether you're starting from scratch or brushing up your skills, our personalized courses are designed for learners of all backgrounds—professionals, travelers, and culture enthusiasts alike.
+
+Led by expert trainers, our sessions blend practical language skills with rich cultural insights, so you don’t just learn Hindi—you live it. From one-on-one lessons to corporate training, we tailor every experience to your needs.
+
+Because at Simply Hindi, we believe language isn’t just about words—it’s about connection, culture, and confidence.
+
+Say it simply. Say it in Hindi.</p>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+.section-title::before {
+    background-color: purple !important;
+}
+</style>
+
+    <!-- About End -->
+
+
+    <!-- Products Start -->
+    <div class="container-fluid product py-5 my-5">
+        <div class="container py-5">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic" style="font-family: 'Playfair Display', serif; color: purple;">Why choose</p>
+<h1 class="display-6" style="font-family: 'Playfair Display', serif; color: #dc1c7c;">Simply Hindi?</h1>
+
+
+            </div>
+            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/10 (1).png" alt="">
+                   <div style="background-color:  #e909ad; color: #fff;" class="shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+    <h5 style="color: #fff;">Learn from seasoned trainer using practical, real-life scenarios.</h5>
+    
+</div>
+
+
+                </a>
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/10 (2).png" alt="">
+                    <div style="background-color:  #e909ad; color: #fff;" class="shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+    <h5 style="color: #fff;">Get tailor-made lessons designed just for you.</h5>
+    
+</div>
+                </a>
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/10 (3).png" alt="">
+                    <div style="background-color:  #e909ad; color: #fff;" class="shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+    <h5 style="color: #fff;">Experience India’s culture as you learn its language.</h5>
+    
+</div>
+                </a>
+                <a href="" class="d-block product-item rounded">
+                    <img src="img/10 (4).png" alt="">
+                    <div style="background-color:  #e909ad; color: #fff;" class="shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+    <h5 style="color: #fff;">Master Hindi for meetings, emails, and professional success.</h5>
+    
+</div>
+                </a>
+
+                 <a href="" class="d-block product-item rounded">
+                    <img src="img/10 (5).png" alt="">
+                   <div style="background-color:  #e909ad; color: #fff;" class="shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+    <h5 style="color: #fff;">Join a global community of successful Hindi learners.</h5>
+    
+</div>
+                </a>
+
+                 <a href="" class="d-block product-item rounded">
+                    <img src="img/10 (6).png" alt="">
+                    <div style="background-color:  #e909ad; color: #fff;" class="shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+    <h5 style="color: #fff;">Learn anytime, anywhere—your schedule, your pace.</h5>
+    
+</div>
+                </a>
+
+                 <a href="" class="d-block product-item rounded">
+                    <img src="img/10 (7).png" alt="">
+                    <div style="background-color: #e909ad; color: #fff;" class="shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+    <h5 style="color: #fff;">Enjoy a warm, supportive, and fun learning environment.</h5>
+    
+</div>
+                </a>
+                
+
+            </div>
+        </div>
+    </div>
+
+   
+<style>
+.owl-carousel .owl-nav {
+    display: none !important;
+}
+</style>
+
+
+
+
+
+
+    <!-- Products End -->
+
+
+<!-- Trusted by Thousands Section -->
+<section class="connection-section" id="contact">
+  <div class="connect-container">
+   <h2 class="connect-title" style="font-family: 'Playfair Display', serif;">
+  <span style="color: rgb(255, 255, 255); font-weight: bold;">Trusted</span> by Thousands
+</h2>
+
+
+
+    <div class="stats">
+      <div class="stat" data-target="3250">
+        <i class="fab fa-instagram icon"></i>
+        <div class="stat-number">0</div>
+        <div class="stat-label">Instagram Followers</div>
+      </div>
+      <div class="stat" data-target="7">
+        <i class="fas fa-globe icon"></i>
+        <div class="stat-number">0</div>
+        <div class="stat-label">Worked with 7 Countries</div>
+      </div>
+     
+      <div class="stat" data-target="300">
+        <i class="fas fa-users icon"></i>
+        <div class="stat-number">0</div>
+        <div class="stat-label">Coached 300+ Students</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- STYLES -->
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .connection-section {
+    background: #cf93dc;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .connect-title {
+    font-size: 2.8em;
+    color: #f0f2f4;
+    margin-bottom: 40px;
+  }
+
+  .connect-title span {
+    color: #f4efef;
+  }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .stat {
+    position: relative;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    padding: 30px 25px;
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25),
+                -5px -5px 15px rgba(255, 255, 255, 0.5);
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: bounce-light 5s infinite ease-in-out;
+    overflow: hidden;
+  }
+
+  .stat:hover {
+    transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+  }
+
+  /* Mandala Background */
+ .stat::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180%;
+  height: 180%;
+  background-image: url("data:image/svg+xml,%3Csvg width='300' height='300' viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffd700' stroke-width='2'%3E%3Ccircle cx='150' cy='150' r='120'/%3E%3Ccircle cx='150' cy='150' r='90'/%3E%3Ccircle cx='150' cy='150' r='60'/%3E%3Cpath d='M150 40 L170 90 L150 130 L130 90 Z'/%3E%3Cpath d='M90 150 L140 170 L190 150 L140 130 Z'/%3E%3Cpath d='M150 260 L130 210 L150 170 L170 210 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  animation: rotateMandala 30s linear infinite;
+  filter: drop-shadow(0 0 2px #ff1e00);
+}
+
+
+@keyframes rotateMandala {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.stat:hover::before {
+  filter: drop-shadow(0 0 10px #e07a0a);
+}
+
+  @keyframes rotateMandala {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1.1);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg) scale(1.1);
+    }
+  }
+
+  /* Light Sweep Animation */
+  .stat::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    transform: rotate(25deg);
+    animation: light-sweep 4s infinite;
+    pointer-events: none;
+  }
+
+  @keyframes light-sweep {
+    0% {
+      transform: translateX(-150%) rotate(25deg);
+    }
+    50% {
+      transform: translateX(150%) rotate(25deg);
+    }
+    100% {
+      transform: translateX(150%) rotate(25deg);
+    }
+  }
+
+  @keyframes bounce-light {
+    0%, 100% {
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25),
+                  -5px -5px 15px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.35),
+                  -8px -8px 20px rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  /* Ensure content is above mandala */
+  .stat * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .stat .icon {
+    font-size: 2.5em;
+    color: #ff0505;
+    margin-bottom: 10px;
+  }
+
+  .stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #141413;
+  }
+
+.stat-label {
+  font-size: 1.4em;
+  color: #5a565b;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+  @media screen and (max-width: 768px) {
+    .connect-title {
+      font-size: 2em;
+    }
+
+    .stat {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+
+   
+
+<!-- Scroll-Triggered Count Animation Script -->
+<script>
+  const statElements = document.querySelectorAll('.stat');
+
+  const animateCounters = (entry) => {
+    const statNumber = entry.querySelector('.stat-number');
+    const target = +entry.getAttribute('data-target');
+    let count = 0;
+    const duration = 2000;
+    const stepTime = Math.max(10, duration / target);
+
+    const formatNumber = (num) => {
+      if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M+';
+      if (num >= 1000) return (num / 1000).toFixed(1) + 'K+';
+      return num;
+    };
+
+    const update = () => {
+      count += Math.ceil(target / (duration / stepTime));
+      if (count >= target) {
+        statNumber.innerText = formatNumber(target);
+      } else {
+        statNumber.innerText = formatNumber(count);
+        setTimeout(update, stepTime);
+      }
+    };
+
+    update();
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters(entry.target);
+        obs.unobserve(entry.target); // only run once
+      }
+    });
+  }, { threshold: 0.4 });
+
+  statElements.forEach(stat => observer.observe(stat));
+</script>
+
+ <main style="background: #ea85e0; padding: 50px 0;">
+  <h2 style="text-align: center; color: white; font-size: 2rem; margin-bottom: 30px; font-family: 'Playfair Display', serif;">
+  Students from all over the world
+</h2>
+  <div class="slider" reverse="true" style="
+        --width: 150px;
+        --height: 150px;
+        --gap: 30px;
+    ">
+    <div class="list">
+      <div class="item"><img src="images/1.png" alt=""></div>
+      <div class="item"><img src="images/2.png" alt=""></div>
+      <div class="item"><img src="images/3.png" alt=""></div>
+      <div class="item"><img src="images/4.png" alt=""></div>
+      <div class="item"><img src="images/5.png" alt=""></div>
+      <div class="item"><img src="images/6.png" alt=""></div>
+      <!-- Repeating for seamless loop -->
+      <div class="item"><img src="images/1.png" alt=""></div>
+      <div class="item"><img src="images/2.png" alt=""></div>
+      <div class="item"><img src="images/3.png" alt=""></div>
+      <div class="item"><img src="images/4.png" alt=""></div>
+      <div class="item"><img src="images/5.png" alt=""></div>
+      <div class="item"><img src="images/6.png" alt=""></div>
+    </div>
+  </div>
+</main>
+
+<style>
+.slider {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.slider .list {
+  display: flex;
+  gap: var(--gap);
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.slider .item {
+  width: var(--width);
+  height: var(--height);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.slider:hover .list {
+  animation-play-state: paused;
+}
+</style>
+
+
+    <!-- Video Modal Start -->
+   
+    
+    <!-- Video Modal End -->
+
+
+   <!-- Store Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="section-title text-center mx-auto mb-5" style="max-width: 500px;">
+      <p class="fs-5 fw-medium fst-italic" style="font-family: 'Playfair Display', serif; color: purple;">
+        Our Courses
+      </p>
+      <h1 class="display-6" style="font-family: 'Playfair Display', serif; color: #dc1c7c;">
+        Checkout New Releases Of Our Courses
+      </h1>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="store-item text-center">
+            <img class="img-fluid" src="img/11.png" alt="">
+            <div class="p-4">
+              <div class="text-center mb-3">
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+              </div>
+              <h4 class="mb-3">Basic Spoken Hindi for Adults</h4>
+              <p>Start from Hindi basics today. Build strong roots in spoken skills.</p>
+              <h4 style="color: purple;"></h4>
+            </div>
+            <div class="store-overlay">
+              <a href="feature.html" class="btn rounded-pill py-2 px-4 m-2" style="background-color: purple; color: white;">
+                More Detail <i class="fa fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="store-item text-center">
+            <img class="img-fluid" src="img/12.png" alt="">
+            <div class="p-4">
+              <div class="text-center mb-3">
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+              </div>
+              <h4 class="mb-3">Teacher’s Training Course for Adults</h4>
+              <p>Teach Hindi the right way. Gain skills to guide adult learners well.</p>
+              <h4 style="color: purple;"></h4>
+            </div>
+            <div class="store-overlay">
+              <a href="feature.html" class="btn rounded-pill py-2 px-4 m-2" style="background-color: purple; color: white;">
+                More Detail <i class="fa fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="store-item text-center">
+            <img class="img-fluid" src="img/14.png" alt="">
+            <div class="p-4">
+              <div class="text-center mb-3">
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+              </div>
+              <h4 class="mb-3">Conversational Hindi Classes</h4>
+              <p>Master daily talk with fluency. Speak confidently in real-life chats.</p>
+              <h4 style="color: purple;"></h4>
+            </div>
+            <div class="store-overlay">
+              <a href="feature.html" class="btn rounded-pill py-2 px-4 m-2" style="background-color: purple; color: white;">
+                More Detail <i class="fa fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="store-item text-center">
+            <img class="img-fluid" src="img/13.png" alt="">
+            <div class="p-4">
+              <div class="text-center mb-3">
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+                <small class="fa fa-star" style="color: purple;"></small>
+              </div>
+              <h4 class="mb-3">Advanced Spoken Hindi Course for Adults</h4>
+              <p>Learn to speak Hindi with ease. Perfect for everyday conversations.</p>
+              <h4 style="color: purple;"></h4>
+            </div>
+            <div class="store-overlay">
+              <a href="feature.html" class="btn rounded-pill py-2 px-4 m-2" style="background-color: purple; color: white;">
+                More Detail <i class="fa fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="text-center mt-4">
+      <a href="feature.html" class="btn rounded-pill py-3 px-5" style="background-color: purple; color: white;">
+        View More Details
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Store End -->
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+
+
+
+
+
+    <!-- Testimonial Start -->
+
+
+  <div class="container py-5">
+    <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+ <p class="fs-5 fw-medium fst-italic" style="font-family: 'Playfair Display', serif; color: purple;">
+  Testimonial
+</p>
+
+<h1 class="display-6" style="font-family: 'Playfair Display', serif;color: #dc1c7c;">
+  What our clients say about Simply Hindi
+</h1>
+
+    </div>
+
+    <!-- 🌟 Testimonial Cards Start -->
+    <div class="grid mt-5">
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>Took a 20-day spoken Hindi course with Vedika—fun, practical, and super effective! I now speak with more confidence, understand grammar better, and even enjoy Hindi films more!</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/21.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Ananya Santosh
+<br></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>A beautiful learning experience! From enrolling to the final day, everything felt smooth and encouraging. Great trainer, punctual, and very interactive.</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/22.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Raaghav P M<br></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>This course opened a new dimension in my life. Learning Hindi with my daughter bonded us in new ways. Feeling proud and motivated to learn even more!</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/23.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Arul Subramaniam
+<br></h2>
+          </div>
+        </div>
+      </div>
+
+       
+
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>Loved the way Vedika made Hindi so relatable! Simple, casual conversations helped us speak from day one. Great for everyday use and confidence building.</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/24.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2>Kaspar Johannes Meyer <br></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="mycard text-center">
+        <div class="content">
+          <div class="text">
+            <p>Never thought I’d enjoy grammar, but this class made it easy and fun. Vedika’s friendly style and clarity helped me speak better Hindi in just weeks!</p>
+          </div>
+        </div>
+        <div class="author">
+          <div class="image">
+            <img src="img/25.png" class="img-fluid">
+          </div>
+          <div class="details">
+            <h2> Dr Gowri Meena<br></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 🌟 Testimonial Cards End -->
+
+  </div>
+</div>
+
+<!-- 🌟 Custom Style -->
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.testimonial {
+  background-color: #800080 !important;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* Mobile: stack cards vertically */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mycard {
+    width: 90%;
+  }
+}
+
+.mycard {
+  flex: 0 0 30%;
+  min-width: 280px;
+  max-width: 350px;
+  position: relative;
+  padding: 40px 20px;
+  background: #ff0;
+  border-radius: 10px;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  animation: animate 5s linear infinite;
+  overflow: hidden;
+}
+
+.mycard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  transform: skewx(-5deg);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mycard:nth-child(1) {
+  background: #3fc012 url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+.mycard:nth-child(2) {
+  background: #f1206a url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+.mycard:nth-child(3) {
+  background: #0f84d4 url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+.mycard:nth-child(4) {
+  background: #d40f0f url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+.mycard:nth-child(5) {
+  background: #d46e0f url(https://www.transparenttextures.com/patterns/basketball.png);
+}
+
+@keyframes animate {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 -196px; }
+}
+
+.mycard .image {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.mycard .image img {
+  width: 100%;
+  height: auto;
+}
+
+.mycard .text {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.mycard .text::before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mycard .details {
+  text-align: center;
+  color: #fff;
+}
+
+.mycard .details h2 {
+  font-size: 20px;
+  margin: 0;
+}
+</style>
+
+
+
+    <!-- Testimonial End -->
+ 
+
+<!-- Contact Start -->
+<div class="container-xxl contact py-5">
+  <div class="container">
+    <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+      <p class="fs-5 fw-medium fst-italic" style="color: purple; font-family: 'Playfair Display', serif;">
+        Contact Us
+      </p>
+      <h1 class="display-6" style="font-family: 'Playfair Display', serif; color: rgb(231, 76, 237);">
+        Contact us right now
+      </h1>
+    </div>
+    <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-8">
+        <div class="row g-5">
+          <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+            <div style="border: 2px solid purple; background-color: transparent; border-radius: 50%; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+              <i class="fa fa-envelope fa-2x" style="color: hotpink;"></i>
+            </div>
+            <p class="mb-2">simplyhindi14@gmail.com</p>
+          </div>
+          <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
+            <div style="border: 2px solid purple; background-color: transparent; border-radius: 50%; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+              <i class="fa fa-phone fa-2x" style="color: hotpink;"></i>
+            </div>
+            <p class="mb-2">+91 98408 33186</p>
+          </div>
+          <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+            <div style="border: 2px solid purple; background-color: transparent; border-radius: 50%; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+              <i class="fa fa-map-marker-alt fa-2x" style="color: hotpink;"></i>
+            </div>
+            <p class="mb-2">Chennai</p>
+            <p class="mb-0">Tamil Nadu, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact End -->
+
+
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4" style="background-color: #b743cb; color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="fw-medium text-white" href="#">Simply Hindi</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                Designed By <a class="fw-medium text-white" href="https://www.linkedin.com/in/nitish-kumar-516aba28b/">Nitish Kumar</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-lg-square rounded-circle back-to-top" style="background-color: purple; border-color: purple;">
+  <i class="bi bi-arrow-up" style="color: white;"></i>
+</a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

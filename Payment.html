@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Checkout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: purple;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .main {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 900px;
+      padding: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
+
+    .course-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #ff6868;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #fd2d2d;
+      transform: scale(1.05);
+    }
+
+    .note {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .qr-section {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .qr-section img {
+      max-width: 200px;
+      border-radius: 12px;
+      border: 2px solid #ccc;
+    }
+
+    .qr-section p {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .form-flex {
+        flex-direction: column;
+      }
+    }
+
+    .success-message,
+    .error-message {
+      display: none;
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .success-message {
+      background-color: #c8f7c5;
+      color: #1c652d;
+    }
+
+    .error-message {
+      background-color: #fddede;
+      color: #a12424;
+    }
+  </style>
+</head>
+<body>
+
+<main class="container">
+  <div class="main">
+    <h2>Payment & Course Details</h2>
+    <form id="courseForm" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="dd0348d4-12be-4962-88b3-e4330d0a7835">
+
+      <div class="form-flex" style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="form-group" style="flex: 1 1 45%;">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" title="Only letters allowed">
+        </div>
+
+        <div class="form-group" style="flex: 1 1 45%;">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+" title="Only letters allowed">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="example@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number" title="Enter a valid 10-digit phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="course">Select Course *</label>
+        <select id="course" name="course" required>
+          <option value="">-- Choose a course --</option>
+          <option value="Basic Spoken Hindi" data-price="13,800 (Group)">Basic Spoken Hindi(Group)</option>
+          <option value="Basic Spoken Hindi" data-price="18,880 (Individual)">Basic Spoken Hindi(Individual)</option>
+           <option value="Basic Spoken Hindi" data-price="20,000">Teacher Training for Adults</option>
+          <option value="Advanced Hindi for Adults" data-price="16,520">Advanced Hindi for Adults</option>
+          <option value="Conversational Hindi (20 days)" data-price="14,160">Conversational Hindi (20 days)</option>
+        </select>
+        <div id="priceBox" class="course-price"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message (optional, max 250 chars)</label>
+        <textarea id="message" name="message" rows="4" maxlength="250" placeholder="Write any special instructions..."></textarea>
+      </div>
+
+      <!-- GPay QR Code -->
+      <div class="qr-section">
+        <p>Scan the QR Code to Pay via GPay</p>
+        <img src="images/WhatsApp Image 2025-06-07 at 11.17.07 AM.jpeg" alt="GPay QR Code">
+      </div>
+
+      <!-- Form messages -->
+      <div id="form-status" class="success-message">Your form has been submitted successfully!</div>
+      <div id="form-error" class="error-message">Something went wrong. Please try again later.</div>
+
+      <button type="submit" class="submit-btn">Submit & Continue</button>
+      <p class="note">* All fields marked with an asterisk are mandatory.</p>
+    </form>
+  </div>
+</main>
+
+<script>
+  const courseSelect = document.getElementById('course');
+  const priceBox = document.getElementById('priceBox');
+
+  courseSelect.addEventListener('change', () => {
+    const selected = courseSelect.options[courseSelect.selectedIndex];
+    const price = selected.dataset.price;
+    priceBox.textContent = price ? `Price: ₹${price}` : '';
+  });
+
+  const form = document.getElementById('courseForm');
+  const formStatus = document.getElementById('form-status');
+  const formError = document.getElementById('form-error');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        priceBox.textContent = '';
+        formStatus.style.display = 'block';
+        formError.style.display = 'none';
+      } else {
+        formStatus.style.display = 'none';
+        formError.style.display = 'block';
+      }
+    }).catch(() => {
+      formStatus.style.display = 'none';
+      formError.style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
