@@ -59,33 +59,34 @@
 
 <!-- Navbar Start -->
 <div class="container-fluid sticky-top" style="background-color: #b743cb;">
-    <div class="container">
-        <nav class="navbar navbar-dark py-2" style="background-color: #b743cb;">
-            <a href="index.html" class="navbar-brand">
-                <img class="img-fluid" src="img/logoo.png" alt="Logo">
+    <nav class="navbar navbar-dark" style="background-color: #b743cb; padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand mb-0">
+                <img src="img/logoo.png" alt="Logo" style="height: 110px; width: auto; object-fit: contain;">
             </a>
 
-            <!-- Hamburger toggle button -->
-            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <!-- Hamburger toggle button on the right -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+        </div>
 
-            <!-- Collapsible menu that aligns right -->
-           <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <div class="navbar-nav text-end">
-                    <a href="index.html" class="nav-item nav-link active text-white">Home</a>
-                    <a href="about.html" class="nav-item nav-link text-white">About</a>
-                    <a href="course.html" class="nav-item nav-link text-white">Courses</a>
-                    <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
-                    <a href="Services.html" class="nav-item nav-link active text-white">Services</a>
-                    <a href="testimonial.html" class="nav-item nav-link active text-white">Testimonial</a>
-                    <a href="Vlog.html" class="nav-item nav-link active text-white">Vlog</a>
-                     <a href="Terms&Conditions.html" class="nav-item nav-link active text-white">Terms & Conditions</a>
-                    <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
-                </div>
+        <!-- Collapsible Navbar links (moved inside nav) -->
+        <div class="collapse navbar-collapse custom-collapse-right" id="navbarCollapse">
+            <div class="navbar-nav text-end p-4">
+                <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+                <a href="about.html" class="nav-item nav-link text-white">About</a>
+                <a href="course.html" class="nav-item nav-link text-white">Courses</a>
+                <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
+                <a href="Services.html" class="nav-item nav-link text-white">Services</a>
+                <a href="testimonial.html" class="nav-item nav-link text-white">Testimonials</a>
+                <a href="Vlog.html" class="nav-item nav-link text-white">Vlog</a>
+                <a href="Terms&Conditions.html" class="nav-item nav-link text-white">Terms & Conditions</a>
+                <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </div>
 <!-- Navbar End -->
 
@@ -115,99 +116,143 @@
 
 
 <!-- Services Start -->
-<div class="container-xxl py-5 bg-light position-relative overflow-hidden">
-    <div class="container">
-        <div class="text-center mb-5">
-            <p class="fs-5 fw-semibold fst-italic text-primary">📌 Our Offerings</p>
-            <h1 class="display-5 fw-bold text-dark">What Simply Hindi Can Do For You</h1>
-            <p class="text-muted">Specialized Hindi Language Services with Accuracy, Speed & Cultural Expertise</p>
-        </div>
-        <div class="row g-4">
-
-            <!-- Transcription Services -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="bg-black rounded-4 p-3 h-100">  <!-- Outer black box -->
-                    <div class="bg-white rounded-3 border-start border-4 border-success p-4 h-100">
-                        <h4 class="text-success mb-3"><i class="fa fa-file-audio me-2"></i>Hindi Transcription Services</h4>
-                        <p class="mb-2 text-dark">Convert audio/video into accurate text — fast, affordable, and over 99% accurate.</p>
-                        <ul class="list-unstyled text-dark mb-3">
-                            <li>✔️ Academic & Thesis Transcriptions</li>
-                            <li>✔️ Meeting Minutes & Conference Calls</li>
-                            <li>✔️ Video & Media Transcripts</li>
-                        </ul>
-                        <span class="badge bg-success text-white px-3 py-2 rounded-pill">Reviewed & Proofread</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Translation Services -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="bg-black rounded-4 p-3 h-100">
-                    <div class="bg-white rounded-3 border-start border-4 border-warning p-4 h-100">
-                        <h4 class="text-warning mb-3"><i class="fa fa-language me-2"></i>Professional Translation</h4>
-                        <p class="mb-2 text-dark">Culturally accurate translations handled by native Hindi experts.</p>
-                        <ul class="list-unstyled text-dark mb-3">
-                            <li>✔️ Legal, Medical, Technical Documents</li>
-                            <li>✔️ Financial & Commercial Translation</li>
-                            <li>✔️ English ↔ Hindi Localization</li>
-                        </ul>
-                        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill">Precise & Culturally Relevant</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proofreading Services -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="bg-black rounded-4 p-3 h-100">
-                    <div class="bg-white rounded-3 border-start border-4 border-danger p-4 h-100">
-                        <h4 class="text-danger mb-3"><i class="fa fa-spell-check me-2"></i>Proofreading & Editing</h4>
-                        <p class="mb-2 text-dark">Polish your content to perfection — error-free, clear, and confident.</p>
-                        <ul class="list-unstyled text-dark mb-3">
-                            <li>✔️ Academic Papers & Resumes</li>
-                            <li>✔️ Blog Posts, Websites, Articles</li>
-                            <li>✔️ Publishing-Ready Material</li>
-                        </ul>
-                        <span class="badge bg-danger text-white px-3 py-2 rounded-pill">100% Language Quality</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Content Writing Services -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="bg-black rounded-4 p-3 h-100">
-                    <div class="bg-white rounded-3 border-start border-4 border-primary p-4 h-100">
-                        <h4 class="text-primary mb-3"><i class="fa fa-pen-nib me-2"></i>Content Writing</h4>
-                        <p class="mb-2 text-dark">Engaging, SEO-friendly Hindi content that speaks your brand’s voice.</p>
-                        <ul class="list-unstyled text-dark mb-3">
-                            <li>✔️ Blogs, Ads & Product Descriptions</li>
-                            <li>✔️ Brand Messaging & Marketing Copy</li>
-                            <li>✔️ Website & Social Media Content</li>
-                        </ul>
-                        <span class="badge bg-primary text-white px-3 py-2 rounded-pill">SEO Optimized & Original</span>
-                    </div>
-                </div>
-            </div>
-
-         <!-- Subtitling Services -->
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
-                <div class="bg-black rounded-4 p-3 h-100">
-                    <div class="bg-white rounded-3 border-start border-4 border-info p-4 h-100">
-                        <h4 class="text-info mb-3"><i class="fa fa-closed-captioning me-2"></i>Hindi Subtitling</h4>
-                        <p class="mb-2 text-dark">Make your videos globally accessible with precise, well-timed Hindi subtitles.</p>
-                        <ul class="list-unstyled text-dark mb-3">
-                            <li>✔️ TV Shows, Documentaries & YouTube</li>
-                            <li>✔️ Corporate Training Videos</li>
-                            <li>✔️ Educational & Cultural Content</li>
-                        </ul>
-                        <span class="badge bg-info text-dark px-3 py-2 rounded-pill">Clarity + Accessibility</span>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
+<div class="container-xxl py-5" style="background-color: #ffe6f0;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="fs-5 fw-semibold fst-italic" style="color: #d63384;">📌 Our Offerings</p>
+      <h1 class="display-5 fw-bold" style="color: #b30059;">What Simply Hindi Can Do For You</h1>
+      <p class="text-muted">Specialized Hindi Language Services with Accuracy, Speed & Cultural Expertise</p>
     </div>
+    <div class="row g-4">
+
+      <!-- Hindi Transcription Services -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div style="background-color: #ffcce6;" class="rounded-4 p-3 h-100">
+          <div class="bg-white rounded-3 border-start border-4" style="border-color: #ff99cc !important; padding: 1.5rem;">
+            <h4 style="color: #cc0066;" class="mb-3"><i class="fa fa-file-audio me-2"></i>Hindi Transcription Services</h4>
+            <p class="mb-2 text-dark">Convert audio/video into accurate text — fast, affordable, and over 99% accurate.</p>
+            <ul class="list-unstyled text-dark mb-3">
+              <li>✔️ Academic & Thesis Transcriptions</li>
+              <li>✔️ Meeting Minutes & Conference Calls</li>
+              <li>✔️ Video & Media Transcripts</li>
+            </ul>
+            <span class="badge text-white px-3 py-2 rounded-pill" style="background-color: #ff66a3;">Reviewed & Proofread</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Translation -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div style="background-color: #ffcce6;" class="rounded-4 p-3 h-100">
+          <div class="bg-white rounded-3 border-start border-4" style="border-color: #ff99cc !important; padding: 1.5rem;">
+            <h4 style="color: #cc0066;" class="mb-3"><i class="fa fa-language me-2"></i>Professional Translation</h4>
+            <p class="mb-2 text-dark">Culturally accurate translations handled by native Hindi experts.</p>
+            <ul class="list-unstyled text-dark mb-3">
+              <li>✔️ Legal, Medical, Technical Documents</li>
+              <li>✔️ Financial & Commercial Translation</li>
+              <li>✔️ English ↔ Hindi Localization</li>
+            </ul>
+            <span class="badge text-white px-3 py-2 rounded-pill" style="background-color: #ff66a3;">Precise & Culturally Relevant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proofreading & Editing -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div style="background-color: #ffcce6;" class="rounded-4 p-3 h-100">
+          <div class="bg-white rounded-3 border-start border-4" style="border-color: #ff99cc !important; padding: 1.5rem;">
+            <h4 style="color: #cc0066;" class="mb-3"><i class="fa fa-spell-check me-2"></i>Proofreading & Editing</h4>
+            <p class="mb-2 text-dark">Polish your content to perfection — error-free, clear, and confident.</p>
+            <ul class="list-unstyled text-dark mb-3">
+              <li>✔️ Academic Papers & Resumes</li>
+              <li>✔️ Blog Posts, Websites, Articles</li>
+              <li>✔️ Publishing-Ready Material</li>
+            </ul>
+            <span class="badge text-white px-3 py-2 rounded-pill" style="background-color: #ff66a3;">100% Language Quality</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Writing -->
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+        <div style="background-color: #ffcce6;" class="rounded-4 p-3 h-100">
+          <div class="bg-white rounded-3 border-start border-4" style="border-color: #ff99cc !important; padding: 1.5rem;">
+            <h4 style="color: #cc0066;" class="mb-3"><i class="fa fa-pen-nib me-2"></i>Content Writing</h4>
+            <p class="mb-2 text-dark">Engaging, SEO-friendly Hindi content that speaks your brand’s voice.</p>
+            <ul class="list-unstyled text-dark mb-3">
+              <li>✔️ Blogs, Ads & Product Descriptions</li>
+              <li>✔️ Brand Messaging & Marketing Copy</li>
+              <li>✔️ Website & Social Media Content</li>
+            </ul>
+            <span class="badge text-white px-3 py-2 rounded-pill" style="background-color: #ff66a3;">SEO Optimized & Original</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hindi Subtitling -->
+      <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
+        <div style="background-color: #ffcce6;" class="rounded-4 p-3 h-100">
+          <div class="bg-white rounded-3 border-start border-4" style="border-color: #ff99cc !important; padding: 1.5rem;">
+            <h4 style="color: #cc0066;" class="mb-3"><i class="fa fa-closed-captioning me-2"></i>Hindi Subtitling</h4>
+            <p class="mb-2 text-dark">Make your videos globally accessible with precise, well-timed Hindi subtitles.</p>
+            <ul class="list-unstyled text-dark mb-3">
+              <li>✔️ TV Shows, Documentaries & YouTube</li>
+              <li>✔️ Corporate Training Videos</li>
+              <li>✔️ Educational & Cultural Content</li>
+            </ul>
+            <span class="badge text-white px-3 py-2 rounded-pill" style="background-color: #ff66a3;">Clarity + Accessibility</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- CTA Button -->
+    <div class="text-center mt-5">
+      <a href="contact.html" class="cta-button">Have a project in mind? Let’s make it shine.</a>
+    </div>
+  </div>
 </div>
+</div>
+
+<!-- Services End -->
+
+<!-- CTA Button Styles -->
+<style>
+  .cta-button {
+  background-color: #dc1c7c !important;
+  color: #fff !important;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: none !important;
+}
+
+.cta-button:hover,
+.cta-button:focus,
+.cta-button:active {
+  background-color: #dc1c7c !important;
+  color: #fff !important;
+  transform: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+
+  
+
+  @media (max-width: 768px) {
+    .cta-button {
+      font-size: 0.95rem;
+      padding: 12px 24px;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+</style>
 <!-- Services End -->
 
 
