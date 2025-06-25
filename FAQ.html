@@ -59,33 +59,34 @@
 
 <!-- Navbar Start -->
 <div class="container-fluid sticky-top" style="background-color: #b743cb;">
-    <div class="container">
-        <nav class="navbar navbar-dark py-2" style="background-color: #b743cb;">
-            <a href="index.html" class="navbar-brand">
-                <img class="img-fluid" src="img/logoo.png" alt="Logo">
+    <nav class="navbar navbar-dark" style="background-color: #b743cb; padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand mb-0">
+                <img src="img/logoo.png" alt="Logo" style="height: 110px; width: auto; object-fit: contain;">
             </a>
 
-            <!-- Hamburger toggle button -->
-            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <!-- Hamburger toggle button on the right -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+        </div>
 
-            <!-- Collapsible menu that aligns right -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <div class="navbar-nav text-end">
-                    <a href="index.html" class="nav-item nav-link active text-white">Home</a>
-                    <a href="about.html" class="nav-item nav-link text-white">About</a>
-                    <a href="course.html" class="nav-item nav-link text-white">Courses</a>
-                    <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
-                    <a href="Services.html" class="nav-item nav-link active text-white">Services</a>
-                    <a href="testimonial.html" class="nav-item nav-link active text-white">Testimonial</a>
-                    <a href="Vlog.html" class="nav-item nav-link active text-white">Vlog</a>
-                     <a href="Terms&Conditions.html" class="nav-item nav-link active text-white">Terms & Conditions</a>
-                    <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
-                </div>
+        <!-- Collapsible Navbar links (moved inside nav) -->
+        <div class="collapse navbar-collapse custom-collapse-right" id="navbarCollapse">
+            <div class="navbar-nav text-end p-4">
+                <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+                <a href="about.html" class="nav-item nav-link text-white">About</a>
+                <a href="course.html" class="nav-item nav-link text-white">Courses</a>
+                <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
+                <a href="Services.html" class="nav-item nav-link text-white">Services</a>
+                <a href="testimonial.html" class="nav-item nav-link text-white">Testimonials</a>
+                <a href="Vlog.html" class="nav-item nav-link text-white">Vlog</a>
+                <a href="Terms&Conditions.html" class="nav-item nav-link text-white">Terms & Conditions</a>
+                <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </div>
 <!-- Navbar End -->
 
@@ -120,17 +121,7 @@
   <div class="container">
     <h1 class="section-title">Frequently Asked Questions</h1>
 
-    <fieldset class="preferences">
-      <legend class="legend">Preferences</legend>
-      <label for="switch-toggle" class="switch-container" title="Allow a single panel open at a time">
-        <span id="switch-label" class="label">Solo Mode</span>
-        <div class="switch">
-          <input id="switch-toggle" type="checkbox" role="switch" aria-labelledby="switch-label" />
-          <span class="slider"></span>
-        </div>
-        <span id="switch-status" class="switch-status" aria-hidden="true">OFF</span>
-      </label>
-    </fieldset>
+    
 
     <div class="accordion">
       <!-- FAQ Accordion Section -->
@@ -559,38 +550,23 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const btns = document.querySelectorAll(".faq-section .accordion-toggle");
-  const soloSwitch = document.getElementById("switch-toggle");
-  const soloStatus = document.getElementById("switch-status");
-
-  let lastActive = null;
 
   const isExpanded = btn => btn.getAttribute("aria-expanded") === "true";
   const close = btn => btn.setAttribute("aria-expanded", "false");
 
   btns.forEach(btn =>
     btn.addEventListener("click", function () {
-      const solo = soloSwitch.checked;
-
-      if (solo) {
-        btns.forEach(b => {
-          if (b !== this && isExpanded(b)) close(b);
-        });
-      }
+      btns.forEach(b => {
+        if (b !== this && isExpanded(b)) close(b);
+      });
 
       const expand = !isExpanded(this);
       this.setAttribute("aria-expanded", expand);
-      if (expand) lastActive = this;
     })
   );
-
-  soloSwitch.addEventListener("change", () => {
-    soloStatus.textContent = soloSwitch.checked ? "ON" : "OFF";
-    btns.forEach(btn => {
-      if (btn !== lastActive && isExpanded(btn)) close(btn);
-    });
-  });
 });
 </script>
+
 <!-- ✅ Enhanced FAQ Accordion Section End -->
 
 
@@ -598,20 +574,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
    
 
-    <!-- Copyright Start -->
-<div class="container-fluid copyright py-4" style="background-color: #b743cb; color: white;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="fw-medium text-white" href="#">Simply Hindi</a>, All Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                Designed By <a class="fw-medium text-white" href="https://www.linkedin.com/in/nitish-kumar-516aba28b/">Nitish Kumar</a>
-            </div>
-        </div>
+<!-- Copyright Start -->
+
+  
+<div class="d-flex justify-content-between align-items-center px-4 flex-wrap">
+    <div class="text-white">
+      &copy; <a class="fw-medium text-white text-decoration-none" href="#">Simply Hindi</a>, All Rights Reserved.
     </div>
-</div>
+    <div class="text-white text-md-end mt-2 mt-md-0">
+      Designed By <a class="fw-medium text-white text-decoration-none" href="https://www.linkedin.com/in/nitish-kumar-516aba28b/">Nitish Kumar</a>
+    </div>
+  </div>
+
+
+
+
 <!-- Copyright End -->
+
+
 
 
 
