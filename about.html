@@ -59,33 +59,34 @@
 
 <!-- Navbar Start -->
 <div class="container-fluid sticky-top" style="background-color: #b743cb;">
-    <div class="container">
-        <nav class="navbar navbar-dark py-2" style="background-color: #b743cb;">
-            <a href="index.html" class="navbar-brand">
-                <img class="img-fluid" src="img/logoo.png" alt="Logo">
+    <nav class="navbar navbar-dark" style="background-color: #b743cb; padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand mb-0">
+                <img src="img/logoo.png" alt="Logo" style="height: 110px; width: auto; object-fit: contain;">
             </a>
 
-            <!-- Hamburger toggle button -->
-            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <!-- Hamburger toggle button on the right -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+        </div>
 
-            <!-- Collapsible menu that aligns right -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <div class="navbar-nav text-end">
-                    <a href="index.html" class="nav-item nav-link active text-white">Home</a>
-                    <a href="about.html" class="nav-item nav-link text-white">About</a>
-                    <a href="course.html" class="nav-item nav-link text-white">Courses</a>
-                    <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
-                    <a href="Services.html" class="nav-item nav-link active text-white">Services</a>
-                    <a href="testimonial.html" class="nav-item nav-link active text-white">Testimonial</a>
-                    <a href="Vlog.html" class="nav-item nav-link active text-white">Vlog</a>
-                     <a href="Terms&Conditions.html" class="nav-item nav-link active text-white">Terms & Conditions</a>
-                    <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
-                </div>
+        <!-- Collapsible Navbar links (moved inside nav) -->
+        <div class="collapse navbar-collapse custom-collapse-right" id="navbarCollapse">
+            <div class="navbar-nav text-end p-4">
+                <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+                <a href="about.html" class="nav-item nav-link text-white">About</a>
+                <a href="course.html" class="nav-item nav-link text-white">Courses</a>
+                <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
+                <a href="Services.html" class="nav-item nav-link text-white">Services</a>
+                <a href="testimonial.html" class="nav-item nav-link text-white">Testimonials</a>
+                <a href="Vlog.html" class="nav-item nav-link text-white">Vlog</a>
+                <a href="Terms&Conditions.html" class="nav-item nav-link text-white">Terms & Conditions</a>
+                <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </div>
 <!-- Navbar End -->
 
@@ -148,7 +149,7 @@
 
     <!-- 🔽 Buttons come last on mobile -->
    <div class="nftdax-buttons">
-  <button class="nftdax-btn nftdax-skew" onclick="location.href='ink-transition-effect-master/index1.html'">READ MORE</button>
+  <button class="nftdax-btn nftdax-skew" onclick="location.href='../ink-transition-effect-master/index1.html'">READ MORE</button>
 </div>
 
 
