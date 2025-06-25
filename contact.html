@@ -59,33 +59,34 @@
 
 <!-- Navbar Start -->
 <div class="container-fluid sticky-top" style="background-color: #b743cb;">
-    <div class="container">
-        <nav class="navbar navbar-dark py-2" style="background-color: #b743cb;">
-            <a href="index.html" class="navbar-brand">
-                <img class="img-fluid" src="img/logoo.png" alt="Logo">
+    <nav class="navbar navbar-dark" style="background-color: #b743cb; padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand mb-0">
+                <img src="img/logoo.png" alt="Logo" style="height: 110px; width: auto; object-fit: contain;">
             </a>
 
-            <!-- Hamburger toggle button -->
-            <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <!-- Hamburger toggle button on the right -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+        </div>
 
-            <!-- Collapsible menu that aligns right -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <div class="navbar-nav text-end">
-                    <a href="index.html" class="nav-item nav-link active text-white">Home</a>
-                    <a href="about.html" class="nav-item nav-link text-white">About</a>
-                    <a href="course.html" class="nav-item nav-link text-white">Courses</a>
-                    <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
-                    <a href="Services.html" class="nav-item nav-link active text-white">Services</a>
-                    <a href="testimonial.html" class="nav-item nav-link active text-white">Testimonial</a>
-                    <a href="Vlog.html" class="nav-item nav-link active text-white">Vlog</a>
-                     <a href="Terms&Conditions.html" class="nav-item nav-link active text-white">Terms & Conditions</a>
-                    <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
-                </div>
+        <!-- Collapsible Navbar links (moved inside nav) -->
+        <div class="collapse navbar-collapse custom-collapse-right" id="navbarCollapse">
+            <div class="navbar-nav text-end p-4">
+                <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+                <a href="about.html" class="nav-item nav-link text-white">About</a>
+                <a href="course.html" class="nav-item nav-link text-white">Courses</a>
+                <a href="FAQ.html" class="nav-item nav-link text-white">FAQ</a>
+                <a href="Services.html" class="nav-item nav-link text-white">Services</a>
+                <a href="testimonial.html" class="nav-item nav-link text-white">Testimonials</a>
+                <a href="Vlog.html" class="nav-item nav-link text-white">Vlog</a>
+                <a href="Terms&Conditions.html" class="nav-item nav-link text-white">Terms & Conditions</a>
+                <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </div>
 <!-- Navbar End -->
 
@@ -305,6 +306,67 @@
 }
 
 </style>
+
+
+<!-- Contact Section Start -->
+<section id="contact" style="background-color: #ffe6f0; padding: 60px 20px;">
+  <div class="container" style="max-width: 600px; margin: auto;">
+    <h2 class="text-center fw-bold mb-2" style="color: #b30059; font-family: 'Playfair Display', serif;">
+      Let's Get Connected
+    </h2>
+    <p class="text-center mb-4" style="color: #6e004e;">
+      If You Have Any Query, Please Contact Us
+    </p>
+
+    <form action="https://api.web3forms.com/submit" method="POST" class="needs-validation" novalidate>
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="dd0348d4-12be-4962-88b3-e4330d0a7835">
+
+      <!-- Name -->
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text" style="background-color: #ffcce6; border: none;">
+            <i class="fa fa-user"></i>
+          </span>
+          <input type="text" class="form-control" name="name" placeholder="Enter Your Name" required />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <div class="input-group">
+          <span class="input-group-text" style="background-color: #ffcce6; border: none;">
+            <i class="fa fa-envelope"></i>
+          </span>
+          <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required />
+        </div>
+      </div>
+
+      <!-- Contact No -->
+      <div class="mb-3">
+        <input type="text" class="form-control" name="phone" placeholder="Enter Your Contact No" required />
+      </div>
+
+      <!-- Requirement -->
+      <div class="mb-4">
+        <textarea class="form-control" name="message" placeholder="Describe Your Requirement" rows="4" required></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit" class="btn w-100" style="background-color: #dc1c7c; color: white; border-radius: 25px;">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- FontAwesome (for icons) + Bootstrap (if not already included) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Copyright Start -->
 <div class="container-fluid copyright py-4" style="background-color: #b743cb; color: white;">
