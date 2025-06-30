@@ -90,30 +90,6 @@
 </div>
 <!-- Navbar End -->
 
-<!-- Page Header Start -->
-<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #f068de !important;">
-    <div class="container text-center py-5">
-        <h1 class="display-2 text-dark mb-4 animated slideInDown" style="font-family: 'Playfair Display', serif;">
-           Testimonials
-        </h1>
-        <nav aria-label="breadcrumb" class="animated slideInDown">
-            <ol class="breadcrumb justify-content-center mb-0" style="font-family: 'Playfair Display', serif;">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item text-dark" aria-current="page">Testimonials</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-
-
-<style>
-    .page-header {
-        background-color: #f068de !important;
-        background-image: none !important; /* in case there's a background image */
-    }
-</style>
-<!-- Page Header End -->
 
 <!-- Vlog Section - Manual Sliding Reels -->
 <section class="vlog-section">
@@ -135,10 +111,29 @@
       <div class="reel-box"><video src="images/WhatsApp Video 2025-06-17 at 3.34.18 PM.mp4" autoplay loop playsinline></video></div>
     </div>
   </div>
+  <!-- Arrow Buttons -->
+<div class="slider-controls">
+  <button class="slider-btn" onclick="scrollReels('left')">&#8592;</button>
+  <button class="slider-btn" onclick="scrollReels('right')">&#8594;</button>
+</div>
 </section>
+<!-- Arrow Buttons -->
+
+
+    
 
 <!-- Script for Manual Control & Sound Toggle -->
 <script>
+  function scrollReels(direction) {
+    const container = document.getElementById('reelSlider');
+    const scrollAmount = 300;
+
+    if (direction === 'left') {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  }
   const videos = document.querySelectorAll('.reel-box video');
 
   // Pause all on load
@@ -169,6 +164,28 @@
 
 <!-- Styles -->
 <style>
+
+.slider-controls {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.slider-btn {
+  background-color: #ff69b4; /* Pink */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
 .vlog-section {
   background: #a30cb0;
   padding: 2rem 1rem;
@@ -231,18 +248,19 @@
 }
 </style>
 
+   
     <!-- Testimonial Start -->
 
 
-  <div class="container py-5">
+  <div class="gradient-border">
+  <div class="container py-5 inner-content">
     <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
- <p class="fs-5 fw-medium fst-italic" style="font-family: 'Playfair Display', serif; color: purple;">
-  Testimonials
-</p>
-
-<h1 class="display-6" style="font-family: 'Playfair Display', serif;color: #dc1c7c;">
-  What our clients say about Simply Hindi
-</h1>
+      <p class="fs-5 fw-medium fst-italic" style="font-family: 'Playfair Display', serif; color: purple;">
+        Testimonials
+      </p>
+      <h1 class="display-6" style="font-family: 'Playfair Display', serif;color: #dc1c7c;">
+        What our clients say about Simply Hindi
+      </h1>
 
     </div>
 
@@ -259,8 +277,11 @@
             <img src="img/21.png" class="img-fluid">
           </div>
           <div class="details">
-            <h2>Ananya Santosh
+            <h2>Dr. Swagatha
+
 <br></h2>
+<p class="designation">Dentist, New Jersey
+
           </div>
         </div>
       </div>
@@ -276,7 +297,10 @@
             <img src="img/22.png" class="img-fluid">
           </div>
           <div class="details">
-            <h2>Raaghav P M<br></h2>
+            <h2>Keerthana Swaminathan
+<br></h2>
+            <p class="designation">Sports Psychologist, Chennai
+</p>
           </div>
         </div>
       </div>
@@ -294,6 +318,9 @@
           <div class="details">
             <h2>Arul Subramaniam
 <br></h2>
+<p class="designation">Co-founder of Master Yourself Academy, Chennai
+ 
+</p>
           </div>
         </div>
       </div>
@@ -301,20 +328,23 @@
        
 
       <div class="mycard text-center">
-        <div class="content">
-          <div class="text">
-            <p>Loved the way Vedika made Hindi so relatable! Simple, casual conversations helped us speak from day one. Great for everyday use and confidence building.</p>
-          </div>
-        </div>
-        <div class="author">
-          <div class="image">
-            <img src="img/24.png" class="img-fluid">
-          </div>
-          <div class="details">
-            <h2>Kaspar Johannes Meyer <br></h2>
-          </div>
-        </div>
-      </div>
+  <div class="content">
+    <div class="text">
+      <p>Loved the way Vedika made Hindi so relatable! Simple, casual conversations helped us speak from day one. Great for everyday use and confidence building.</p>
+    </div>
+  </div>
+  <div class="author">
+    <div class="image">
+      <img src="img/24.png" class="img-fluid">
+    </div>
+    <div class="details">
+      <h2>Kaspar Johannes Meyer</h2>
+      <p class="designation">Spokesperson of the German Embassy, New Delhi 
+</p> <!-- You can change the text here -->
+    </div>
+  </div>
+</div>
+
 
       <div class="mycard text-center">
         <div class="content">
@@ -328,6 +358,9 @@
           </div>
           <div class="details">
             <h2> Dr Gowri Meena<br></h2>
+            <p class="designation">Founder & Director of Women’s Choice Clinic, Anna Nagar Chennai
+
+</p>
           </div>
         </div>
       </div>
@@ -493,7 +526,6 @@
 
 
     <!-- Testimonial End -->
-
 
 
 <!-- Copyright Start -->
